@@ -1,6 +1,21 @@
 import { Analytics } from '@vercel/analytics/next'
+import { Inter, Space_Grotesk } from 'next/font/google'
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+  preload: true,
+})
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-space-grotesk',
+  display: 'swap',
+  preload: true,
+})
 
 export const metadata: Metadata = {
   title: 'Shrikrishna Mokhashi | Python Full Stack Developer',
@@ -48,7 +63,7 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: `(() => { try { const t = localStorage.getItem('theme'); const d = t ? t === 'dark' : true; document.documentElement.classList.toggle('dark', d); document.documentElement.classList.toggle('light', !d) } catch {} })()` }} />
       </head>
-      <body className="antialiased">
+      <body className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
