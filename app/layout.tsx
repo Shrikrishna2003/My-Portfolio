@@ -3,8 +3,13 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Shrikrishna Mokhashi | Python Full Stack Developer',
+  description: 'Portfolio of Shrikrishna Mokhashi, a Computer Science Engineering graduate building practical full-stack, backend, and AI-powered applications.',
+  openGraph: {
+    title: 'Shrikrishna Mokhashi | Python Full Stack Developer',
+    description: 'Explore Shrikrishna Mokhashi\'s projects, skills, experience, and education.',
+    type: 'website',
+  },
   generator: 'v0.app',
   icons: {
     icon: [
