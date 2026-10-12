@@ -212,3 +212,19 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 850px) { .profile-photo-wrap { width: min(78vw, 310px); }.hero-art .code-window { right: 0; bottom: -5%; width: min(82%, 300px); }.mobile-theme-toggle { display: inline-flex; justify-content: flex-start; width: fit-content; } }
 @media (max-width: 520px) { .hero-art { padding-bottom: 80px; }.profile-photo-wrap { width: min(82vw, 300px); }.hero-art .code-window { right: -2%; } }
 
+/* Premium black-and-crimson overrides */
+:root { --blue: #c9141d; --violet: #9f1118; --soft: #f7eeee; }
+.button-primary { background: #c9141d; box-shadow: 0 10px 22px #c9141d2b; }
+.button-primary:hover { background: #a90f17; }
+.accent, .eyebrow, .resume-link, .skill-icon, .about-note svg, .project-body li svg, .education-meta strong { color: #c9141d; }
+.contact-section { background: #090909; }
+.dark .hero-role { color: #f2dfe0; }
+.dark .nav-links a, .dark .footer-links a, .dark .socials a { color: #d2b5b7; }
+.dark .section-heading p, .dark .hero-text, .dark .about-lead p, .dark .timeline-card p, .dark .education-card p { color: #cdb9ba; }
+.dark .profile-photo-wrap { box-shadow: 0 24px 55px #c9141d40; }
+.dark .project-visual { background: #241113; color: #d48b90; }
+.dark .visual-2 { background: #271115; color: #df8c92; }
+.dark .visual-3 { background: #211113; color: #d58b90; }
+.light .nav-links a:hover, .light .footer-links a:hover, .light .socials a:hover { color: #c9141d; }
+
+
