@@ -29,12 +29,11 @@ function ResumeButton({ subtle = false }: { subtle?: boolean }) {
 export default function Home() {
   const [open, setOpen] = useState(false)
   const [copied, setCopied] = useState(false)
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(true)
   const [themeReady, setThemeReady] = useState(false)
   useEffect(() => {
     const savedTheme = window.localStorage.getItem('theme')
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-    setDarkMode(savedTheme ? savedTheme === 'dark' : prefersDark)
+    setDarkMode(savedTheme ? savedTheme === 'dark' : true)
     setThemeReady(true)
   }, [])
   useEffect(() => {

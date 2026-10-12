@@ -46,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script dangerouslySetInnerHTML={{ __html: `(() => { try { const t = localStorage.getItem('theme'); const d = t ? t === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches; document.documentElement.classList.toggle('dark', d); document.documentElement.classList.toggle('light', !d) } catch {} })()` }} />
+        <script dangerouslySetInnerHTML={{ __html: `(() => { try { const t = localStorage.getItem('theme'); const d = t ? t === 'dark' : true; document.documentElement.classList.toggle('dark', d); document.documentElement.classList.toggle('light', !d) } catch {} })()` }} />
       </head>
       <body className="antialiased">
         {children}
