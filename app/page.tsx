@@ -3,10 +3,10 @@
 import { useEffect, useState } from 'react'
 import { ArrowUpRight, BarChart3, BriefcaseBusiness, CalendarClock, Check, Clipboard, Code2, Flame, GraduationCap, Mail, Menu, Moon, NotebookPen, Sun, Target, Users, X } from 'lucide-react'
 
-const projects = [
-  { name: 'Viraja', category: 'AI-Powered Career Intelligence', description: 'An AI-powered platform that helps users analyze resumes, identify improvement areas, and explore practical career guidance.', features: ['Resume information extraction', 'Skills, education, and project analysis', 'Weak bullet point detection', 'Career guidance'], tags: ['Python', 'FastAPI', 'PostgreSQL', 'AI'], github: 'https://github.com/Shrikrishna2003/Viraja', demo: 'https://viraja.onrender.com/' },
-  { name: 'Online Learning Platform', category: 'Java Full Stack Internship Project', description: 'An online learning platform developed during Java Full Stack internship training, applying web development and backend programming fundamentals.', features: ['Educational application workflows', 'Java backend fundamentals', 'Database connectivity'], tags: ['Java', 'JSP', 'HTML', 'CSS', 'MySQL'], github: 'https://github.com/Shrikrishna2003/Online-Learning-Platform', demo: '' },
-]
+  const projects = [
+    { name: 'Online Learning Platform', category: 'Java Full Stack Internship Project', description: 'An online learning platform developed during Java Full Stack internship training, applying web development and backend programming fundamentals.', features: ['Educational application workflows', 'Java backend fundamentals', 'Database connectivity'], tags: ['Java', 'JSP', 'HTML', 'CSS', 'MySQL'], github: 'https://github.com/Shrikrishna2003/Online-Learning-Platform', demo: '' },
+    { name: 'Viraja', category: 'AI-Powered Career Intelligence', description: 'An AI-powered platform that helps users analyze resumes, identify improvement areas, and explore practical career guidance.', features: ['Resume information extraction', 'Skills, education, and project analysis', 'Weak bullet point detection', 'Career guidance'], tags: ['Python', 'FastAPI', 'PostgreSQL', 'AI'], github: 'https://github.com/Shrikrishna2003/Viraja', demo: 'https://viraja.onrender.com/' },
+  ]
 
 const skillGroups = [
   ['Programming', ['Python', 'Java', 'JavaScript', 'SQL']],
