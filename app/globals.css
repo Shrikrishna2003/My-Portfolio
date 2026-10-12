@@ -222,19 +222,52 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 850px) { .profile-photo-wrap { width: min(78vw, 310px); }.hero-art .code-window { right: 0; bottom: -5%; width: min(82%, 300px); }.mobile-theme-toggle { display: inline-flex; justify-content: flex-start; width: fit-content; } }
 @media (max-width: 520px) { .hero-art { padding-bottom: 80px; }.profile-photo-wrap { width: min(82vw, 300px); }.hero-art .code-window { right: -2%; } }
 
-/* Premium black-and-crimson overrides */
-:root { --blue: #c9141d; --violet: #9f1118; --soft: #f7eeee; }
-.button-primary { background: #c9141d; box-shadow: 0 10px 22px #c9141d2b; }
-.button-primary:hover { background: #a90f17; }
-.accent, .eyebrow, .resume-link, .skill-icon, .about-note svg, .project-body li svg, .education-meta strong { color: #c9141d; }
-.contact-section { background: #090909; }
-.dark .hero-role { color: #f2dfe0; }
-.dark .nav-links a, .dark .footer-links a, .dark .socials a { color: #d2b5b7; }
-.dark .section-heading p, .dark .hero-text, .dark .about-lead p, .dark .timeline-card p, .dark .education-card p { color: #cdb9ba; }
-.dark .profile-photo-wrap { box-shadow: 0 24px 55px #c9141d40; }
-.dark .project-visual { background: #241113; color: #d48b90; }
+/* Premium black-and-crimson design system */
+:root {
+  --ink: #111111;
+  --muted-ink: #52525b;
+  --blue: #e11d2e;
+  --violet: #a91522;
+  --soft: #f4f4f5;
+  --crimson: #e11d2e;
+  --surface: #ffffff;
+  --border: #e4e4e7;
+}
+.button-primary { background: var(--crimson); box-shadow: 0 10px 22px #e11d2e2b; }
+.button-primary:hover { background: #b91c2b; }
+.accent, .eyebrow, .resume-link, .skill-icon, .about-note svg, .project-body li svg, .education-meta strong { color: var(--crimson); }
+.nav-shell { background: rgb(250 250 250 / .92); border-color: var(--border); }
+.section-tinted { background: var(--soft); }
+.skill-card, .project-card, .timeline-card, .education-card, .about-note { background: var(--surface); border-color: var(--border); }
+.contact-section { padding-block: 90px; background: var(--surface); color: var(--ink); border-block: 1px solid var(--border); }
+.contact-section .eyebrow { color: var(--crimson); }
+.contact-section p { color: var(--muted-ink); }
+.button-light { background: var(--crimson); color: white; }
+.button-light:hover { background: #b91c2b; }
+.copy-button { border-color: #d4d4d8; color: var(--ink); }
+.footer { border-top: 1px solid var(--border); }
+.footer p, .footer small { color: var(--muted-ink); }
+.dark body { background: #0b0b0d; color: #f5f5f5; }
+.dark .nav-shell, .dark .nav-links { background: rgb(11 11 13 / .92); border-color: #27272a; }
+.dark .section-tinted { background: #101014; }
+.dark .skill-card, .dark .project-card, .dark .timeline-card, .dark .education-card, .dark .about-note { background: #151519; border-color: #2f2225; }
+.dark .text-link, .dark .project-links a, .dark .about-lead .large-copy, .dark .company, .dark .contact-section h2 { color: #f5f5f5; }
+.dark .section-heading p, .dark .hero-text, .dark .about-lead p, .dark .timeline-card p, .dark .education-card p, .dark .project-body p { color: #a1a1aa; }
+.dark .hero-role { color: #e4e4e7; }
+.dark .nav-links a, .dark .footer-links a, .dark .socials a { color: #a1a1aa; }
+.dark .nav-links a:hover, .dark .footer-links a:hover, .dark .socials a:hover { color: var(--crimson); }
+.dark .tags span { background: #262024; color: #d4aeb3; }
+.dark .contact-section { background: #151519; border-color: #2f2225; }
+.dark .contact-section p { color: #a1a1aa; }
+.dark .copy-button { border-color: #52525b; color: #f5f5f5; }
+.dark .footer { border-color: #2f2225; }
+.dark .project-visual { background: #241113; color: #df8c92; }
 .dark .visual-2 { background: #271115; color: #df8c92; }
 .dark .visual-3 { background: #211113; color: #d58b90; }
-.light .nav-links a:hover, .light .footer-links a:hover, .light .socials a:hover { color: #c9141d; }
+.dark .profile-photo-wrap { box-shadow: 0 24px 55px #e11d2e40; }
+.theme-toggle { font-family: var(--font-inter), Inter, sans-serif; }
+@media (max-width: 850px) {
+  .nav-links { background: var(--surface); }
+}
 
 
