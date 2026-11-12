@@ -23,7 +23,7 @@ function SectionHeading({ eyebrow, title, text }: { eyebrow: string; title: stri
 }
 
 function ResumeButton({ subtle = false }: { subtle?: boolean }) {
-  return <a className={subtle ? 'resume-link' : 'button button-primary'} href="/resume.pdf" download="Shrikrishna_Mokhashi_Resume.pdf"><span>Download resume</span><ArrowUpRight aria-hidden="true" /></a>
+  return <a className={subtle ? 'resume-link' : 'button button-primary'} href="/resume.pdf" target="_blank" rel="noreferrer"><span>Download resume</span><ArrowUpRight aria-hidden="true" /></a>
 }
 
 export default function Home() {
